@@ -1,0 +1,38 @@
+<annotation>
+	<folder>image</folder>
+	<filename>bedroom9.jpg</filename>
+	<path>/Users/van/Desktop/dsi/capstone/image/bedroom9.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>600</width>
+		<height>400</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>bed</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>178</xmin>
+			<ymin>252</ymin>
+			<xmax>474</xmax>
+			<ymax>399</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>night stand</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>470</xmin>
+			<ymin>256</ymin>
+			<xmax>540</xmax>
+			<ymax>360</ymax>
+		</bndbox>
+	</object>
+</annotation>

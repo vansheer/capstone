@@ -1,0 +1,38 @@
+<annotation>
+	<folder>image</folder>
+	<filename>IMG_8392.JPG</filename>
+	<path>/Users/van/Desktop/dsi/capstone/image/IMG_8392.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4032</width>
+		<height>3024</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>bed</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>644</xmin>
+			<ymin>118</ymin>
+			<xmax>3507</xmax>
+			<ymax>3024</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>night stand</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2763</xmin>
+			<ymin>862</ymin>
+			<xmax>3519</xmax>
+			<ymax>1637</ymax>
+		</bndbox>
+	</object>
+</annotation>

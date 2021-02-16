@@ -1,0 +1,26 @@
+<annotation>
+	<folder>image</folder>
+	<filename>IMG_8394.JPG</filename>
+	<path>/Users/van/Desktop/dsi/capstone/image/IMG_8394.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4032</width>
+		<height>3024</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>bed</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>432</xmin>
+			<ymin>655</ymin>
+			<xmax>3507</xmax>
+			<ymax>2962</ymax>
+		</bndbox>
+	</object>
+</annotation>

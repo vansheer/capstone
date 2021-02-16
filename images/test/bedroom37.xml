@@ -1,0 +1,26 @@
+<annotation>
+	<folder>image</folder>
+	<filename>bedroom37.jpg</filename>
+	<path>/Users/van/Desktop/dsi/capstone/image/bedroom37.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>337</width>
+		<height>450</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>bed</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2</xmin>
+			<ymin>192</ymin>
+			<xmax>337</xmax>
+			<ymax>450</ymax>
+		</bndbox>
+	</object>
+</annotation>
