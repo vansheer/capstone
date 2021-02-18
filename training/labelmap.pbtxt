@@ -1,0 +1,28 @@
+item {
+    id: 1
+    name: 'bed'
+}
+item {
+    id: 2
+    name: 'night stand'
+}
+item {
+    id: 3
+    name: 'lamp'
+}
+item {
+    id: 4
+    name: 'dresser'
+}
+item {
+    id: 5
+    name: 'frame'
+}
+item {
+    id: 6
+    name: 'mirror'
+}
+item {
+    id: 7
+    name: 'bench'
+}
