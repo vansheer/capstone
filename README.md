@@ -30,6 +30,14 @@ For this phase I'm only focusing on common objects in the bedroom. I took a few 
 
 
 ## STEPS
+1. Outside research
+2. Locate tutorial
+3. Download repos
+4. Collect photos
+5. Label photos
+6. Train/test split photos
+7. Tensorflow Object Detection API installation
+8. Prepare data for API
 
 
 
@@ -37,3 +45,6 @@ For this phase I'm only focusing on common objects in the bedroom. I took a few 
 
 ## REFERENCES
 [Tensorflow Object Detection with Tensorflow 2: Creating a custom model](https://gilberttanner.com/blog/tensorflow-object-detection-with-tensorflow-2-creating-a-custom-model)
+
+## RESOURCES
+[Welcome to the Model Garden for TensorFlow](https://github.com/tensorflow/models)
