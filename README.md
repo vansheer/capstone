@@ -72,11 +72,13 @@ But that quickly got unrealistic when you have so many terms in the same categor
 
 ## Things to do next
 - Include more labels
+
 Since I only tried one label for now, the model can mistake certain proper names for tournament titles.
 
 So I’ll definitely include more labels to train again.
 
 - Improve label quality
+
 Also the label quality needs to be improved. 
 
 By that I mean make the labels more comprehensible. 
@@ -84,6 +86,7 @@ By that I mean make the labels more comprehensible.
 Preferably look for some external api that can return the tra
 
 - Evaluate
+
 I haven’t done any statistical evaluation on the model yet, only visual testing.
 
 Somehow spaCy encourages command line evaluation, which I’m not very comfortable with now. 
