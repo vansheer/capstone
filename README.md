@@ -65,18 +65,37 @@ According to spaCy documentation, a few hundreds of examples would be enough to 
 
 
 ## Difficulties
-Creating match patterns was the second most time-consuming task. Unlike labeling sentences where you can decide if something important is contained by only a quick glance, creating patterns 是怎么样的，还要继续想一想再补充<br>
+Creating match patterns was the second most time-consuming task. It’s all about getting to know how patterns work, what is it that you want and how many you need to create. 
+<br>
 Since a label can be given to each match and then converted to a name entity, I was hoping that an appropriate Chinese translation can be passed to each of them as the label, so that whenever someone throws a document into this app, they can see all the things new to them explained in proper Chinese words with spaCy name entity visualizer. <br>
 But that quickly got unrealistic when you have so many terms in the same category but with different meanings, like all the tournament titles and player names. Since creating matches for name entities is all about generalizing, I decided that I would only use the fore above-mentioned categories for the labels, and that can at least tell the readers where they can go search for the answers. 
 
-## Things to know
-Unlike other machine learning projects where <br>
-To generalize 
+## Things to do next
+- Include more labels
+Since I only tried one label for now, the model can mistake certain proper names for tournament titles.
+
+So I’ll definitely include more labels to train again.
+
+- Improve label quality
+Also the label quality needs to be improved. 
+
+By that I mean make the labels more comprehensible. 
+
+Preferably look for some external api that can return the tra
+
+- Evaluate
+I haven’t done any statistical evaluation on the model yet, only visual testing.
+
+Somehow spaCy encourages command line evaluation, which I’m not very comfortable with now. 
+
+But I’ll look into it. 
+
 
 
 
 ## REFERENCES
-[]()
-
-## RESOURCES
-[]()
+[Natural Language Processing in Python](https://www.youtube.com/watch?v=xvqsFTUsOmc&list=PL8qBHIkB0G-caxqLTMeX142keonKYe3Xe&index=1&t=4724s&ab_channel=PyOhio)
+<br>
+[Intro to NLP with spaCy](https://www.youtube.com/watch?v=WnGPv6HnBok&list=PLBmcuObd5An559HbDr_alBnwVsGq-7uTF&ab_channel=Explosion)
+<br>
+[spaCy documentation](https://spacy.io/usage/spacy-101)
