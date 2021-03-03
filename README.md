@@ -11,16 +11,16 @@ I'm trying to train a custom name entity model with spaCy for specific domains t
 
 
 ## WHY THIS?
-When I was a conference interpreter before the pandamic, one of the time-consuming tasks for me and many of my colleagues was (and still is I believe) to get familiarized with specific domains. <br>
-As freelance interpreters, we work with clients in all fields. Whenever we work with a new client in a filed we don't know much about for the first time, we will need to spend days on documents (slides/PDFs and so on) that client offers us for preparation, mostly for two things:
+When I was a conference interpreter before the pandemic, one of the time-consuming tasks for me and many of my colleagues was (and still is I believe) to get familiarized with specific domains. <br>
+As freelance interpreters, we work with clients in all fields. Whenever we work with a new client in a field we don't know much about for the first time, we will need to spend days on documents (slides/PDFs and so on) that client offers us for preparation, mostly for two things:
 - Go through everything to make sure we don't miss anything important **that we don't know**
-- Google things that we don't know
+- Google things that we don't know at the same time
 
 
 
 #### And the problems are:
-- Going through everything takes a lot of time. What we need to spot is usually new words and/or domain specific terms, and everything else should be generic. But we cannot skip any part since we don't know where those new words and terms are. When there are hundreds of pages to read, it's not hard to imagine how much time is actually wasted.
-- Googling things is another big pain for political reasons if the interpreter lives in Mainland China. It's time-consuming, technologically demanding and even a bit unsafe.
+- Going through everything takes a lot of time. What we need to spot is usually new words and/or domain specific terms, and everything else would be generic. But we cannot skip any part since we don't know where those new words and terms are. When there are hundreds of pages to read, it's not hard to imagine how much time is actually wasted.
+- Googling things is another big pain for political reasons if the interpreter lives in Mainland China. It's technologically demanding, time-consuming and even a bit unsafe.
 
 So, a custom name entitiy model with sufficient entities and proper visualization can help address both problems. 
 
@@ -37,33 +37,28 @@ Then I talked to a few of my colleagues who did this before WTA found me. None o
 Things that are difficult for non tennis fans can be broken into four categories:
 1. **Tennis tournament titles**, like all 4 Grand Slams, Fed Cup, and all those location-based tournaments;
 2. **Tennis game terms**, like serving sets, break points and the eagle eye;
-3. **Tennis players**, especially those from Eastern European countries, both their names and their styles, rankings and overall career performance;
+3. **Tennis players**, especially those from Eastern European countries, including their names and their styles, rankings and overall career achievements;
 4. **Certain generic words** that can mean something different in the tennis context. One of those words that come up a lot is 'Aggressive' and its variations. The word 'Aggressive' in English can be positive sometimes ('They made an aggressive marketing plan'), but its literal equivalent in Chinese is almost always negative, very close to being 'provocative' or 'looking for trouble'. 
 
 So these will be my main focus for this project. 
 
 ## WHAT DATA?
 The data I used is real transcripts in Word document format from WTA press conferences I interpreted in the past. They were recorded by a professional stenographer on-site and prove-read by her and myself. All text was read in, cleaned up, and split into 1911 individual sentences.  All sentences were then saved to a csv file to serve as the raw data. <br>
-I then add an extra column called "label" to the csv file. All sentences that include something for the model to learn were manually labeled as 1, and otherwise 0. This step didn't envolve any automated parts because it only requires domain knowledge in a given context. It took me about 90 minutes to label everything, and I ended up with 208 labels that are 1, which is about 11% (208/1911). 
+I then add an extra column called "label" to the csv file. All sentences that include something for the model to learn were manually labeled as 1, and otherwise 0. This step didn't envolve any automated parts because it only requires domain knowledge in a given context. It took me about 90 minutes to label everything, and I ended up with 210 labels that are 1, which is about 11% (210/1911). 
 
 
 
 ## WHAT FRAMEWORK?
 I went with [spaCy](https://spacy.io/) because it offers built-in name entity recognizer that are customizable. But I used its version 2.3.5 instead of the most up-to-date version 3 since I find the documentation of the older version easier to understand and follow.<br>
-According to spaCy documentation, a few hundreds of examples would be enough to start, but a few thousands is more ideal. So the data that I have just met the cut-off line. 
-
-
-
-## Dictionary
-
+According to spaCy documentation, a few hundreds of examples would be enough to start training, but a few thousands is more ideal. So the data that I have just met the cut-off line. 
 
 
 
 ## STEPS
 1. Data gathering
 2. Data cleaning
-3. Match pattern building
-4. Labeling
+3. Labeling
+4. Match pattern building
 5. NER pipe building
 6. Training
 7. Evaluation
