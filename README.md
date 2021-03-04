@@ -102,3 +102,8 @@ But I’ll look into it.
 [Intro to NLP with spaCy](https://www.youtube.com/watch?v=WnGPv6HnBok&list=PLBmcuObd5An559HbDr_alBnwVsGq-7uTF&ab_channel=Explosion)
 <br>
 [spaCy documentation](https://spacy.io/usage/spacy-101)
+
+
+
+## App
+I haven't fully figured out the streamlit app yet. There is a spacy-streamlit library for visualization in streamlit apps, but I got errors for the visualization part, maybe because of version conflicts. 
