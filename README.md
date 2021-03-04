@@ -77,14 +77,6 @@ Since I only tried one label for now, the model can mistake certain proper names
 
 So I’ll definitely include more labels to train again.
 
-- Improve label quality
-
-Also the label quality needs to be improved. 
-
-By that I mean make the labels more comprehensible. 
-
-Preferably look for some external api that can return the tra
-
 - Evaluate
 
 I haven’t done any statistical evaluation on the model yet, only visual testing.
@@ -93,6 +85,9 @@ Somehow spaCy encourages command line evaluation, which I’m not very comfortab
 
 But I’ll look into it. 
 
+- Streamlit app
+
+An unfinished streamlit app is saved in the not_ready folder, and I'll keep working on it.
 
 
 
