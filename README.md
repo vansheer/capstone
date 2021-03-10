@@ -100,5 +100,5 @@ An unfinished streamlit app is saved in the not_ready folder, and I'll keep work
 
 
 
-## App
+## App (IN DEVELOPMENT)
 I haven't fully figured out the streamlit app yet. There is a spacy-streamlit library for visualization in streamlit apps, but I got errors for the visualization part, maybe because of version conflicts. 
